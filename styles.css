@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+header > button {
+  background-color: #ffa33c;
+}
+.inputSearch {
+  background-image: url("./starry.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+}
+input {
+  text-align: center;
+  padding: 10px;
+}
+.imgdiv {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.innerDiv {
+  background-color: whitesmoke;
+  border: 0;
+  padding: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.imageCard {
+  max-width: 100%;
+  border-radius: 20px;
+}
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2 0 2;
+  margin: 2px 0 0 0;
+}
+
+.profile {
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+}
+.username {
+  font-size: x-small;
+  padding: 0;
+  align-self: center;
+}
+.likes {
+  margin-right: 0px;
+}
+li {
+  list-style: none;
+}
+.dark-mode-button {
+  background-color: #000;
+  color: #fff;
+}
+
+/* CSS for the ImageModal component */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal img {
+  margin-top: 5%;
+  padding-top: 5%;
+  max-width: 70%;
+  max-height: 70%;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.modal-details {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.modal-details h2 {
+  font-size: 24px;
+}
+
+.modal-details img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.modal-details p {
+  font-size: 18px;
+  margin: 10px 0;
+}
